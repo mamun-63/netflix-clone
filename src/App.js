@@ -7,7 +7,11 @@ function App() {
   return (
     <div className="app">
       {/* just passing properties to reuse the one Row Component, thats the power of React  */}
-      <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} /> 
+      <Row 
+        title="Netflix Originals" 
+        fetchUrl={requests.fetchNetflixOriginals} 
+        isLargeRow
+      /> 
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
